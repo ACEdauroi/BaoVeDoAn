@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-NavigateAndTabBar/Pods-NavigateAndTabBar-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FBAEMKit/FBAEMKit.framework
+${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
+${BUILT_PRODUCTS_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework
+${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework
+${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework
+${BUILT_PRODUCTS_DIR}/Layoutless/Layoutless.framework
+${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework
+${BUILT_PRODUCTS_DIR}/TTGTagCollectionView/TTGTags.framework
+${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework
