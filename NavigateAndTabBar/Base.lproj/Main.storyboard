@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i9t-bE-C9W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X2A-cC-qe0">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -59,6 +59,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6DL-7B-L5w" customClass="Sea">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -78,6 +79,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PAO-FA-g3g">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -114,6 +116,7 @@
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -163,6 +166,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Od6-8T-M2s">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -250,7 +254,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYd-mF-4mq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="2397.0443349753696"/>
+            <point key="canvasLocation" x="1332" y="2382.2660098522169"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="1DX-O1-7EF">
+            <objects>
+                <viewController id="N8U-oX-nLN" customClass="ContentViewController" customModule="NavigateAndTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iz6-XK-4lc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oSI-iR-KCe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8DX-y2-Yjs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAm-fy-zbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3778.4000000000001" y="2382.2660098522169"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="WFC-Tx-Z84">
@@ -273,9 +293,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i9t-bE-C9W" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="x7m-3g-deg">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" largeTitles="YES" id="x7m-3g-deg">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -291,6 +312,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GK6-xt-TbY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-218" y="-1077"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="bRM-Zc-skI">
+            <objects>
+                <viewController id="JU2-Mm-278" customClass="ListViewController" customModule="NavigateAndTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MgA-q8-ZnW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aNI-fZ-cok"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uxN-uP-SqN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pH8-Mg-fUj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1000.8" y="2338.6699507389162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z4U-7x-agg">
@@ -308,7 +345,44 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idl-Oj-7JK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82.400000000000006" y="2396.305418719212"/>
+            <point key="canvasLocation" x="388" y="2381.5270935960593"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y1i-FJ-mBf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X2A-cC-qe0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BQX-i4-lG7" colorLabel="IBBuiltInLabel-Gray"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VNo-RJ-QUw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N8U-oX-nLN" kind="relationship" relationship="rootViewController" id="Rgd-vf-PZf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogU-iq-MDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836" y="2381.5270935960593"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d43-Pi-Ddq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="duC-GE-ohW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bmF-07-SvE">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JU2-Mm-278" kind="relationship" relationship="rootViewController" id="wyB-7x-N1g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1h-RM-wXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1943.2" y="2338.6699507389162"/>
         </scene>
     </scenes>
     <resources>

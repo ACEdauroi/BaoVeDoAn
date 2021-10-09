@@ -67,11 +67,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func configure() {
         
         models.append(Section(title: "Alert", options: [
-        .switchCell(model: SettingsSwitchOptions(title: "New for you", icon: UIImage(systemName: "password"), iconBackgroundcolor: .clear,handler: {
+        .switchCell(model: SettingsSwitchOptions(title: "New for you", icon: UIImage(named: "icons8-news-50"), iconBackgroundcolor: .systemGreen,handler: {
             }, isOn: true)),
-        .switchCell(model: SettingsSwitchOptions(title: "Notification", icon: UIImage(systemName: "password"), iconBackgroundcolor: .clear,handler: {
+        .switchCell(model: SettingsSwitchOptions(title: "Notification", icon: UIImage(named: "icons8-bell-50"), iconBackgroundcolor: .systemRed,handler: {
             }, isOn: true)),
-        .switchCell(model: SettingsSwitchOptions(title: "Opportunity", icon: UIImage(systemName: "password"), iconBackgroundcolor: .clear,handler: {
+        .switchCell(model: SettingsSwitchOptions(title: "Opportunity", icon: UIImage(named: "icons8-opportunity-50"), iconBackgroundcolor: .systemOrange,handler: {
             }, isOn: true)),
         ]))
         
@@ -79,19 +79,19 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         
         models.append(Section(title: "Account", options: [
-            .staticCell(model: SettingsOption(title: "Change Password", icon: UIImage(systemName: "password"), iconBackgroundcolor: .clear){
+            .staticCell(model: SettingsOption(title: "Change Password", icon: UIImage(named: "icons8-password-reset-50"), iconBackgroundcolor: .systemTeal){
                 
             }),
-            .staticCell(model:SettingsOption(title: "Content settings", icon: UIImage(systemName: "settings"), iconBackgroundcolor: .clear){
+            .staticCell(model:SettingsOption(title: "Content settings", icon: UIImage(named: "icons8-content-50"), iconBackgroundcolor: .systemPink){
             
         }),
-            .staticCell(model:SettingsOption(title: "Language", icon: UIImage(systemName: "translation"), iconBackgroundcolor: .clear){
+            .staticCell(model:SettingsOption(title: "Language", icon: UIImage(named: "icons8-language-50"), iconBackgroundcolor: .systemYellow){
             
         }),
-            .staticCell(model:SettingsOption(title: "Social", icon: UIImage(systemName: "ads"), iconBackgroundcolor: .clear){
+            .staticCell(model:SettingsOption(title: "Social", icon: UIImage(named: "icons8-social-network-64"), iconBackgroundcolor: .systemBlue){
             
         }),
-            .staticCell(model:SettingsOption(title: "Private & Security", icon: UIImage(systemName: "compliant"), iconBackgroundcolor: .clear){
+            .staticCell(model:SettingsOption(title: "Private & Security", icon: UIImage(named: "icons8-private-64"), iconBackgroundcolor: .systemIndigo){
             
         }),
         

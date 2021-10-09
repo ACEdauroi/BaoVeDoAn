@@ -246,8 +246,7 @@ class SecondViewController : UIViewController  {
     override func viewDidLoad() {
            super.viewDidLoad()
             
-        
-            
+       
             view.backgroundColor = .white
             view.addSubview(someImageView)
             view.addSubview(buttonWelcome)

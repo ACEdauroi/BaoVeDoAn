@@ -21,10 +21,50 @@ class HomeViewController: UIViewController {
         let label1 = UILabel(frame: CGRect(x: 1, y: 0, width: 210, height: 100))
         label1.backgroundColor = UIColor(red: 0.86, green: 0.74, blue: 0.49, alpha: 1.00)
         label1.textColor = .white
-        label1.font = UIFont.boldSystemFont(ofSize: 15)
+        label1.font = UIFont.boldSystemFont(ofSize: 16)
         label1.textAlignment = .natural
         label1.layer.cornerRadius = 15
         label1.text = "Sale off 90%"
+        
+        
+        let label2 = UILabel(frame: CGRect(x: 220, y: 0, width: 250, height: 100))
+        label2.backgroundColor = .orange
+        label2.textColor = .white
+        label2.textAlignment = .natural
+        label2.layer.cornerRadius = 15
+       
+        
+        let label3 = UILabel(frame: CGRect(x: 10, y: 0, width: 100, height: 100))
+        label3.textColor = .white
+        label3.font = UIFont.boldSystemFont(ofSize: 17)
+        label3.textAlignment = .natural
+        label3.numberOfLines = 2
+        label3.text = "Sale 50% for 50 first"
+        label2.addSubview(label3)
+        
+        
+        let imageVoucher2 = UIImageView(frame: CGRect(x: 140 , y: 0, width: 110, height: 100))
+        imageVoucher2.image = UIImage(named: "hottles")
+        label2.addSubview(imageVoucher2)
+        
+        
+        let label4 = UILabel(frame: CGRect(x: 490, y: 0, width: 200, height: 100))
+        label4.backgroundColor = .red
+        label4.textAlignment = .natural
+        label4.layer.cornerRadius = 15
+        
+        
+        let label5 = UILabel(frame: CGRect(x: 10, y: 0, width: 110, height: 100))
+        label5.textColor = .white
+        label5.font = UIFont.boldSystemFont(ofSize: 17)
+        label5.textAlignment = .natural
+        label5.numberOfLines = 2
+        label5.text = "Best sale ever"
+        label5.addSubview(label4)
+        
+        let imageVoucher3 = UIImageView(frame: CGRect(x: 120 , y: 0, width: 110, height: 100))
+        imageVoucher3.image = UIImage(named: "unnamed-3")
+        label4.addSubview(imageVoucher3)
         
         let labelCate = UILabel(frame: CGRect(x: 40, y: 475, width: 150, height: 50))
         labelCate.text = "Be Inspried"
@@ -65,6 +105,7 @@ class HomeViewController: UIViewController {
         let labelHint4 = UILabel(frame: CGRect(x: 10, y: 50, width: 300, height: 300 ))
         labelHint4.text = "Mortocycle trip in Lai Chau"
         labelHint4.numberOfLines = 4
+        labelHint4.layer.shadowOpacity = 0.5
         labelHint4.font = UIFont.boldSystemFont(ofSize: 40)
         labelHint4.textColor = .white
         
@@ -81,16 +122,18 @@ class HomeViewController: UIViewController {
         labelHint6.font = UIFont.systemFont(ofSize: 15)
         labelHint6.textColor = .white
         
-        let labelHint7 = UILabel(frame: CGRect(x: 10, y: 20, width: 300, height: 300 ))
+        let labelHint7 = UILabel(frame: CGRect(x: 10, y: 10, width: 300, height: 300 ))
         labelHint7.text = "The ideal tourist and virtual living place in Hoa Binh"
         labelHint7.numberOfLines = 4
         labelHint7.font = UIFont.boldSystemFont(ofSize: 40)
+        labelHint7.layer.shadowOpacity = 0.5
         labelHint7.textColor = .white
         
         let buttonReadMore = UIButton(frame: CGRect(x: 10, y: 375, width: 150, height: 50))
         buttonReadMore.layer.cornerRadius = 20
         buttonReadMore.backgroundColor = .white
         buttonReadMore.setTitle("Read more", for: .normal)
+        buttonReadMore.addTarget(self, action: #selector(didTapContent), for: .touchUpInside)
         buttonReadMore.setTitleColor(.black, for: .normal)
         
         let buttonReadMore2 = UIButton(frame: CGRect(x: 10, y: 375, width: 150, height: 50))
@@ -98,6 +141,7 @@ class HomeViewController: UIViewController {
         buttonReadMore2.backgroundColor = .white
         buttonReadMore2.setTitle("Read more", for: .normal)
         buttonReadMore2.setTitleColor(.black, for: .normal)
+        buttonReadMore2.addTarget(self, action: #selector(didTapContent2), for: .touchUpInside)
         
         let imageBlog = UIImageView(frame: CGRect(x: 0, y: 1150, width: 450, height: 450))
         imageBlog.image = UIImage(named:"phuot")
@@ -105,13 +149,35 @@ class HomeViewController: UIViewController {
         let imageBlog2 = UIImageView(frame: CGRect(x: 0, y: 1650, width: 450, height: 450))
         imageBlog2.image = UIImage(named:"HoaBinh")
         
+        let imageBlog3 = UIImageView(frame: CGRect(x: 0, y: 2150, width: 380, height: 420))
+        imageBlog3.image = UIImage(named:"213099676")
+        
+        let labelHint8 = UILabel(frame: CGRect(x: 10, y: -10, width: 300, height: 300 ))
+        labelHint8.text = "Oktoberfest and Springfest Inclusive Camping "
+        labelHint8.numberOfLines = 4
+        labelHint8.font = UIFont.boldSystemFont(ofSize: 40)
+        labelHint8.layer.shadowOpacity = 0.5
+        labelHint8.textColor = .white
+        
+        let labelHint9 = UILabel(frame: CGRect(x: 10, y: 130, width: 300, height: 300 ))
+        labelHint9.text = "This campsite provides all-inclusive party accommodation during Munich's Oktoberfest (September/October) and Springfest (April/May) festivals. 10 km from Munich city centre, Oktoberfest and Springfest Inclusive Camping is easily accessible by a bus that stops right outside.Some categories offer just a basic tent. Many of the categories let you stay in an all-inclusive basis in pre-erected tents or teepees with mattresses and sleeping bags, a tasty breakfast every day, and party guides to direct you to the main beer halls. On check-in you will be greeted with a complimentary beer or sangria, and the crew will show you around the campsite, where you’ll find carnival-type celebrations, DJs, live bands, live radio shows, an open bar for EUR 10 per day, and hundreds of like-minded travellers from all over the world to party with.Oktoberfest and Springfest Inclusive Camping has a 24-hour front desk, WiFi access, a common area with music, an open bar and games. It is 3 km from München-Pasing Train Station and 32 km from Munich Airport. There is a bus stop right in front of the campsite, offering good public transport access.Please note that the accommodation offered is a fun, loud and party-filled experience. Guests should not come here seeking peace and tranquility.We speak your language!"
+        labelHint9.numberOfLines = 4
+        labelHint9.font = UIFont.systemFont(ofSize: 15)
+        labelHint9.textColor = .white
+        
+        let buttonReadMore3 = UIButton(frame: CGRect(x: 10, y: 350, width: 150, height: 50))
+        buttonReadMore3.layer.cornerRadius = 20
+        buttonReadMore3.backgroundColor = .white
+        buttonReadMore3.setTitle("Read more", for: .normal)
+        buttonReadMore3.setTitleColor(.black, for: .normal)
+        
         let imageVoucher = UIImageView(frame: CGRect(x: 100, y: 0, width: 110, height: 100))
         imageVoucher.image = UIImage(named: "Vinholidays")
             
         let scrollMainView = UIScrollView(frame: CGRect(x: 0, y: -150, width: 375, height: 3000))
         scrollMainView.backgroundColor = .white
         view.addSubview(scrollMainView)
-        scrollMainView.contentSize = CGSize(width: 0, height: 4500)
+        scrollMainView.contentSize = CGSize(width: 0, height: 6500)
         
         let contentBackgroundView = UIView(frame:CGRect(x: 0, y: -147, width: 375, height: 600))
         contentBackgroundView.backgroundColor = UIColor(red: 0.00, green: 0.82, blue: 1.00, alpha: 1.00)
@@ -334,16 +400,19 @@ class HomeViewController: UIViewController {
         scrollMainView.addSubview(labelMain)
         scrollMainView.addSubview(labelRecommend)
         scrollMainView.addSubview(scrollView2)
-        
+        scrollView2.addSubview(label2)
         scrollMainView.addSubview(imageBlog)
+        scrollMainView.addSubview(imageBlog3)
         scrollView2.addSubview(label1)
         label1.addSubview(imageVoucher)
         image2.addSubview(labelHint)
         image3.addSubview(labelHint2)
         image1.addSubview(labelHint3)
-        
-        
-       
+        scrollView2.addSubview(label4)
+        label4.addSubview(label5)
+        imageBlog3.addSubview(buttonReadMore3)
+        imageBlog3.addSubview(labelHint8)
+        imageBlog3.addSubview(labelHint9)
     }
     func configure() {
         view.backgroundColor = .white
@@ -353,5 +422,20 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         navigationItem.title = "Home"
     }
-   
+    @objc func didTapContent() {
+        let vc = ContentViewController ()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc func didTapContent2() {
+        let vc2 = SecondaryContentViewController()
+        self.navigationController?.pushViewController(vc2, animated: true)
+    }
 }
+class SecondaryContentViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+    }
+}
+    
+

@@ -221,6 +221,50 @@ class BookingViewController: UIViewController {
         list3.layer.shadowOffset = .zero
         scrollMainView.addSubview(list3)
         
+        let image = UIImageView(frame: CGRect(x: 10, y: 15, width: 95, height: 80))
+        image.image = UIImage(named: "paris-2")
+        image.layer.cornerRadius = 15
+        
+        let labelName1 = UILabel(frame: CGRect(x: 120, y: 5, width: 70, height: 60))
+        labelName1.text = "Paris"
+        labelName1.font = .boldSystemFont(ofSize: 21)
+        labelName1.textColor = .black
+        
+        let labelName2 = UILabel(frame: CGRect(x: 120, y: 40, width: 200, height: 60))
+        labelName2.text = "From 50$ - 180$ "
+        labelName2.font = .systemFont(ofSize: 18)
+        labelName2.textColor = .black
+        
+        let imageLastLabel = UIImageView(frame: CGRect(x: 275, y: 40, width: 30, height: 30))
+        imageLastLabel.image = UIImage(named: "icons8-back-30 1")
+        list2.addSubview(imageLastLabel)
+        
+        list2.addSubview(labelName1)
+        list2.addSubview(image)
+        list2.addSubview(labelName2)
+        
+        let image2 = UIImageView(frame: CGRect(x: 10, y: 15, width: 95, height: 80))
+        image2.image = UIImage(named: "bordeaux")
+        image2.layer.cornerRadius = 15
+       
+        
+        let labelName3 = UILabel(frame: CGRect(x: 120, y: 5, width: 150, height: 60))
+        labelName3.text = "Bordeaux"
+        labelName3.font = .boldSystemFont(ofSize: 21)
+        labelName3.textColor = .black
+        
+        let labelName4 = UILabel(frame: CGRect(x: 120, y: 40, width: 200, height: 60))
+        labelName4.text = "From 70$ - 210$ "
+        labelName4.font = .systemFont(ofSize: 18)
+        
+        let imageLastLabel2 = UIImageView(frame: CGRect(x: 275, y: 40, width: 30, height: 30))
+        imageLastLabel2.image = UIImage(named: "icons8-back-30 1")
+        list3.addSubview(imageLastLabel2)
+        
+        list3.addSubview(image2)
+        list3.addSubview(labelName3)
+        list3.addSubview(labelName4)
+        
         view.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.00)
        title = "Booking"
     }
@@ -436,7 +480,7 @@ class JourneyViewController: UIViewController {
     }
     @objc func TapListAdd () {
         let vc2 = ListViewController ()
-        self.present(vc2, animated: true)
+        self.navigationController?.pushViewController(vc2, animated: true)
     }
 }
 class MapViewController: UIViewController {
@@ -538,10 +582,4 @@ extension MapViewController: CLLocationManagerDelegate {
         centerMapOnUserLocation()
     }
     
-}
-class ListViewController: UIViewController {
-    override func viewDidLoad() {
-           super.viewDidLoad()
-        view.backgroundColor = .white
-}
 }

@@ -86,7 +86,7 @@ let searchContronller = UISearchController()
             image3.layer.cornerRadius = 50
             scrollView.addSubview(image3)
 
-            let avaImage = UIImageView(frame: CGRect(x: 300, y: -100, width: 40, height: 40))
+            let avaImage = UIImageView(frame: CGRect(x: 300, y: -115, width: 40, height: 40))
             avaImage.image = UIImage(named:"man")
             scrollView.addSubview(avaImage)
             

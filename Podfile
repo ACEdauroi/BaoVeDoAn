@@ -12,5 +12,6 @@ target 'NavigateAndTabBar' do
 	pod 'FBSDKLoginKit'
 	pod 'FSCalendar'
 	pod 'MessageKit'
+	pod 'BulletinBoard'
 
 end

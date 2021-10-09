@@ -46,12 +46,13 @@ static let identifier = "SettingsTableViewCell"
     override func layoutSubviews() {
         super.layoutSubviews()
         let size: CGFloat = contentView.frame.size.height - 12
-        iconContainerView.frame = CGRect(x: 15, y: 6, width: size, height: size)
+        iconContainerView.frame = CGRect(x: 10, y: 6, width: size, height: size)
         let imageSize: CGFloat = size/1.5
         iconImageView.frame = CGRect(x: (size-imageSize)/2, y: (size-imageSize)/2, width: imageSize, height: imageSize)
+        iconImageView.center = iconContainerView.center
         label.frame = CGRect(x: 25 + iconContainerView.frame.size.width,
                              y: 0,
-                             width:   contentView.frame.size.width - 15 - iconContainerView.frame.size.width,
+                             width:   contentView.frame.size.width - 20 - iconContainerView.frame.size.width,
                              height: contentView.frame.size.height)
     }
     override func prepareForReuse() {

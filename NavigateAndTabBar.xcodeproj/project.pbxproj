@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		184B036726FB9B7100D54E38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B036626FB9B7100D54E38 /* HomeViewController.swift */; };
+		1856A38F27104B69009DED52 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A38E27104B69009DED52 /* ListViewController.swift */; };
+		1856A391271053CD009DED52 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A390271053CD009DED52 /* MainSearchViewController.swift */; };
+		1856A3932710543B009DED52 /* TableExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856A3922710543B009DED52 /* TableExtensionViewController.swift */; };
 		186947FE2700D0E400FA25A0 /* MessageContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186947FD2700D0E400FA25A0 /* MessageContractViewController.swift */; };
 		186948002700D4A500FA25A0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186947FF2700D4A500FA25A0 /* ChatViewController.swift */; };
 		1878DBBB26F23B72004D9DE6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DBBA26F23B72004D9DE6 /* SettingsViewController.swift */; };
+		187AE9CF270815EA0093D1C4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AE9CE270815EA0093D1C4 /* ContentViewController.swift */; };
 		187B2C9026FB30F3009082D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B2C8F26FB30F3009082D1 /* LoginViewController.swift */; };
 		187B313626F57F13009962EE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B313526F57F13009962EE /* ProfileViewController.swift */; };
 		187CCB8C26F63924002FB10D /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CCB8B26F63924002FB10D /* PhotoCollectionViewCell.swift */; };
@@ -30,15 +34,20 @@
 /* Begin PBXFileReference section */
 		13927328743D7528195C4856 /* Pods-NavigateAndTabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigateAndTabBar.debug.xcconfig"; path = "Target Support Files/Pods-NavigateAndTabBar/Pods-NavigateAndTabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		184B036626FB9B7100D54E38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1856A38E27104B69009DED52 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1856A390271053CD009DED52 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
+		1856A3922710543B009DED52 /* TableExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableExtensionViewController.swift; sourceTree = "<group>"; };
 		186947FD2700D0E400FA25A0 /* MessageContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContractViewController.swift; sourceTree = "<group>"; };
 		186947FF2700D4A500FA25A0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		1878DBBA26F23B72004D9DE6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		187AE9CE270815EA0093D1C4 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		187B2C8F26FB30F3009082D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		187B313526F57F13009962EE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		187CCB8B26F63924002FB10D /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		187CD31326F4C16A004E6AD9 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		187CD31526F4E8B8004E6AD9 /* SwitchSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSettingsTableViewCell.swift; sourceTree = "<group>"; };
 		187EB85526F70D36005F3A40 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		188E1808271151C800B7B2F7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18E141C026F1AE4E001C0F2B /* NavigateAndTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigateAndTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E141C326F1AE4E001C0F2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E141C526F1AE4E001C0F2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,10 +106,15 @@
 				18E141C526F1AE4E001C0F2B /* SceneDelegate.swift */,
 				18E141C726F1AE4E001C0F2B /* ViewController.swift */,
 				186947FD2700D0E400FA25A0 /* MessageContractViewController.swift */,
+				188E1808271151C800B7B2F7 /* README.md */,
 				186947FF2700D4A500FA25A0 /* ChatViewController.swift */,
 				184B036626FB9B7100D54E38 /* HomeViewController.swift */,
+				187AE9CE270815EA0093D1C4 /* ContentViewController.swift */,
 				187B2C8F26FB30F3009082D1 /* LoginViewController.swift */,
 				187EB85526F70D36005F3A40 /* BookingViewController.swift */,
+				1856A38E27104B69009DED52 /* ListViewController.swift */,
+				1856A3922710543B009DED52 /* TableExtensionViewController.swift */,
+				1856A390271053CD009DED52 /* MainSearchViewController.swift */,
 				18E141D726F1B523001C0F2B /* SearchViewController.swift */,
 				187B313526F57F13009962EE /* ProfileViewController.swift */,
 				187CCB8B26F63924002FB10D /* PhotoCollectionViewCell.swift */,
@@ -248,9 +262,13 @@
 				187CD31626F4E8B8004E6AD9 /* SwitchSettingsTableViewCell.swift in Sources */,
 				187B313626F57F13009962EE /* ProfileViewController.swift in Sources */,
 				187EB85626F70D36005F3A40 /* BookingViewController.swift in Sources */,
+				187AE9CF270815EA0093D1C4 /* ContentViewController.swift in Sources */,
+				1856A3932710543B009DED52 /* TableExtensionViewController.swift in Sources */,
 				186948002700D4A500FA25A0 /* ChatViewController.swift in Sources */,
 				18E141C626F1AE4E001C0F2B /* SceneDelegate.swift in Sources */,
 				187B2C9026FB30F3009082D1 /* LoginViewController.swift in Sources */,
+				1856A391271053CD009DED52 /* MainSearchViewController.swift in Sources */,
+				1856A38F27104B69009DED52 /* ListViewController.swift in Sources */,
 				184B036726FB9B7100D54E38 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -54,9 +54,10 @@ static let identifier = "SwitchSettingsTableViewCell"
     override func layoutSubviews() {
         super.layoutSubviews()
         let size: CGFloat = contentView.frame.size.height - 12
-        iconContainerView.frame = CGRect(x: 15, y: 6, width: size, height: size)
+        iconContainerView.frame = CGRect(x: 10, y: 6, width: size, height: size)
         let imageSize: CGFloat = size/1.5
         iconImageView.frame = CGRect(x: (size-imageSize)/2, y: (size-imageSize)/2, width: imageSize, height: imageSize)
+        iconImageView.center = iconContainerView.center
         mySwitch.sizeToFit()
         mySwitch.frame = CGRect(x: contentView.frame.size.width - mySwitch.frame.size.width - 20,
                                 y: (contentView.frame.size.height - mySwitch.frame.size.height)/2,
